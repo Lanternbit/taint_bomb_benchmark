@@ -1,1 +1,8 @@
 "Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
+l111I11I1.I111llI1l,avgt,5,0.055,0.007,ns/op
+l111I11I1.I1I1lI1II,avgt,5,0.011,0.001,ns/op
+l111I11I1.I1ll111Il,avgt,5,0.010,0.001,ns/op
+l111I11I1.Il1l11Il1,avgt,5,0.017,0.007,ns/op
+l111I11I1.IlIl1l111,avgt,5,0.010,0.001,ns/op
+l111I11I1.lIl1lII1l,avgt,5,0.426,0.046,ns/op
+l111I11I1.llI1I1lII,avgt,5,0.423,0.023,ns/op
