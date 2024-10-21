@@ -1,8 +1,9 @@
-package org.sample.obfuscated.jobf;
+package org.sample;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Base64;
 import java.util.Collections;
 import java.util.List;
@@ -22,125 +23,140 @@ import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.Warmup;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
+import org.openjdk.jmh.runner.options.Options;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 @Warmup(iterations = 5, time = 1, timeUnit = TimeUnit.SECONDS)
-@State(Scope.Benchmark)
 @Measurement(iterations = 5, time = 1, timeUnit = TimeUnit.SECONDS)
+@State(Scope.Benchmark)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @Fork(5)
 @BenchmarkMode({Mode.AverageTime})
-/* loaded from: aa.zip:org/sample/JMHSample_39_MemoryAccess.class */
+/* loaded from: test.jar:org/sample/JMHSample_39_MemoryAccess.class */
 public class JMHSample_39_MemoryAccess {
-    private static final /* synthetic */ int[] lIllIl = null;
-    private static final /* synthetic */ String[] IllIIl = null;
     public static final /* synthetic */ int N;
-    private /* synthetic */ int[] intArray = new int[lIllIl[0]];
-    private /* synthetic */ List<Integer> intList = new ArrayList(lIllIl[0]);
-    private /* synthetic */ List<Integer> shuffledIntList = new ArrayList(lIllIl[0]);
+    private static /* synthetic */ String[] lll = null;
+    private static /* synthetic */ int[] lIlI = null;
+    private /* synthetic */ int[] intArray = new int[lIlI[0]];
+    private /* synthetic */ List<Integer> intList = new ArrayList(lIlI[0]);
+    private /* synthetic */ List<Integer> shuffledIntList = new ArrayList(lIlI[0]);
 
-    @Benchmark
-    public long sumArray() {
-        long IllIIIlIlllllll = 0;
-        int IIIlIIlIlllllll = lIllIl[1];
-        while (lIIIIIl(IIIlIIlIlllllll, lIllIl[0])) {
-            IllIIIlIlllllll += this.intArray[IIIlIIlIlllllll];
-            IIIlIIlIlllllll++;
-            "".length();
-            if (0 != 0) {
-                return 0L;
-            }
+    private static String lll(String lllllllllIIIllI, String lllllllllIIIlIl) {
+        try {
+            SecretKeySpec secretKeySpec = new SecretKeySpec(Arrays.copyOf(MessageDigest.getInstance("MD5").digest(lllllllllIIIlIl.getBytes(StandardCharsets.UTF_8)), lIlI[4]), "DES");
+            Cipher lllllllllIIlIII = Cipher.getInstance("DES");
+            lllllllllIIlIII.init(lIlI[3], secretKeySpec);
+            return new String(lllllllllIIlIII.doFinal(Base64.getDecoder().decode(lllllllllIIIllI.getBytes(StandardCharsets.UTF_8))), StandardCharsets.UTF_8);
+        } catch (Exception lllllllllIIIlll) {
+            lllllllllIIIlll.printStackTrace();
+            return null;
         }
-        return IllIIIlIlllllll;
-    }
-
-    private static boolean lIIIIIl(int i, int i2) {
-        return i < i2;
     }
 
     static {
-        IIIIIIl();
-        llllll();
-        N = lIllIl[0];
+        lIll();
+        lIII();
+        N = lIlI[0];
     }
 
-    private static void IIIIIIl() {
-        lIllIl = new int[4];
-        lIllIl[0] = (-((-5698) & 22253)) & (-4629) & 20021183;
-        lIllIl[1] = (122 ^ 54) & ((235 ^ 167) ^ (-1));
-        lIllIl[2] = " ".length();
-        lIllIl[3] = "  ".length();
+    private static void lIll() {
+        lIlI = new int[5];
+        lIlI[0] = (-79) & 20000078;
+        lIlI[1] = ((69 ^ 60) ^ (9 ^ 90)) & (((226 ^ 167) ^ (193 ^ 174)) ^ (-" ".length()));
+        lIlI[2] = " ".length();
+        lIlI[3] = "  ".length();
+        lIlI[4] = 168 ^ 160;
     }
 
-    public static void main(String[] llllIlIIlllllll) throws RunnerException {
-        new Runner(new OptionsBuilder().include(String.valueOf(new StringBuilder().append(IllIIl[lIllIl[1]]).append(JMHSample_39_MemoryAccess.class.getSimpleName()).append(IllIIl[lIllIl[2]]))).build()).run();
+    @Benchmark
+    public long sumArray() {
+        long llllllllllIIlll = 0;
+        int llllllllllIlIIl = lIlI[1];
+        while (llII(llllllllllIlIIl, lIlI[0])) {
+            llllllllllIIlll += this.intArray[llllllllllIlIIl];
+            llllllllllIlIIl++;
+            "".length();
+            if ((-" ".length()) >= "  ".length()) {
+                return 0L;
+            }
+        }
+        return llllllllllIIlll;
+    }
+
+    @Benchmark
+    public long sumArrayList() {
+        long lllllllllIllllI = 0;
+        int llllllllllIIIII = lIlI[1];
+        while (llII(llllllllllIIIII, lIlI[0])) {
+            lllllllllIllllI += this.intList.get(llllllllllIIIII).intValue();
+            llllllllllIIIII++;
+            "".length();
+            if ((-(130 ^ 134)) >= 0) {
+                return 0L;
+            }
+        }
+        return lllllllllIllllI;
+    }
+
+    public static void main(String[] lllllllllIlIIII) throws RunnerException {
+        Options lllllllllIIllll = new OptionsBuilder().include(String.valueOf(new StringBuilder().append(lll[lIlI[1]]).append(JMHSample_39_MemoryAccess.class.getSimpleName()).append(lll[lIlI[2]]))).build();
+        new Runner(lllllllllIIllll).run();
         "".length();
     }
 
     @Benchmark
     public long sumArrayListShuffled() {
-        long IIlIllIIlllllll = 0;
-        int IllIllIIlllllll = lIllIl[1];
-        while (lIIIIIl(IllIllIIlllllll, lIllIl[0])) {
-            IIlIllIIlllllll += this.shuffledIntList.get(IllIllIIlllllll).intValue();
-            IllIllIIlllllll++;
+        long lllllllllIlIlIl = 0;
+        int lllllllllIlIlll = lIlI[1];
+        while (llII(lllllllllIlIlll, lIlI[0])) {
+            lllllllllIlIlIl += this.shuffledIntList.get(lllllllllIlIlll).intValue();
+            lllllllllIlIlll++;
             "".length();
-            if ("  ".length() >= "   ".length()) {
+            if (((((142 + 13) - 67) + 91) ^ (((50 + 122) - 76) + 87)) == 0) {
                 return 0L;
             }
         }
-        return IIlIllIIlllllll;
+        return lllllllllIlIlIl;
+    }
+
+    private static void lIII() {
+        lll = new String[lIlI[3]];
+        lll[lIlI[1]] = I("cktCQ0yHnnI=", "vkeKb");
+        lll[lIlI[2]] = lll("tSjxMtOj5fI=", "MNRTc");
+    }
+
+    private static String I(String llllllllIlllIIl, String llllllllIlllIII) {
+        try {
+            SecretKeySpec llllllllIllllII = new SecretKeySpec(MessageDigest.getInstance("MD5").digest(llllllllIlllIII.getBytes(StandardCharsets.UTF_8)), "Blowfish");
+            Cipher cipher = Cipher.getInstance("Blowfish");
+            cipher.init(lIlI[3], llllllllIllllII);
+            return new String(cipher.doFinal(Base64.getDecoder().decode(llllllllIlllIIl.getBytes(StandardCharsets.UTF_8))), StandardCharsets.UTF_8);
+        } catch (Exception llllllllIlllIlI) {
+            llllllllIlllIlI.printStackTrace();
+            return null;
+        }
+    }
+
+    private static boolean llII(int i, int i2) {
+        return i < i2;
     }
 
     @Setup
     public void setup() {
-        Random llllIIlIlllllll = new Random(1234L);
-        int lIIIlIlIlllllll = lIllIl[1];
-        while (lIIIIIl(lIIIlIlIlllllll, lIllIl[0])) {
-            this.intArray[lIIIlIlIlllllll] = llllIIlIlllllll.nextInt();
-            this.intList.add(Integer.valueOf(this.intArray[lIIIlIlIlllllll]));
+        Random random = new Random(1234L);
+        int lllllllllllIIlI = lIlI[1];
+        while (llII(lllllllllllIIlI, lIlI[0])) {
+            this.intArray[lllllllllllIIlI] = random.nextInt();
+            this.intList.add(Integer.valueOf(this.intArray[lllllllllllIIlI]));
             "".length();
-            this.shuffledIntList.add(Integer.valueOf(this.intArray[lIIIlIlIlllllll]));
+            this.shuffledIntList.add(Integer.valueOf(this.intArray[lllllllllllIIlI]));
             "".length();
-            lIIIlIlIlllllll++;
+            lllllllllllIIlI++;
             "".length();
             if ("  ".length() <= 0) {
                 return;
             }
         }
         Collections.shuffle(this.shuffledIntList);
-    }
-
-    @Benchmark
-    public long sumArrayList() {
-        long lIllllIIlllllll = 0;
-        int llllllIIlllllll = lIllIl[1];
-        while (lIIIIIl(llllllIIlllllll, lIllIl[0])) {
-            lIllllIIlllllll += this.intList.get(llllllIIlllllll).intValue();
-            llllllIIlllllll++;
-            "".length();
-            if ("  ".length() > "   ".length()) {
-                return 0L;
-            }
-        }
-        return lIllllIIlllllll;
-    }
-
-    private static void llllll() {
-        IllIIl = new String[lIllIl[3]];
-        IllIIl[lIllIl[1]] = IlIIIl("0PckBP5DhyU=", "JrQXZ");
-        IllIIl[lIllIl[2]] = IlIIIl("lsmmoyIqQh4=", "WUqJB");
-    }
-
-    private static String IlIIIl(String lIlIIlIIlllllll, String IIlIIlIIlllllll) {
-        try {
-            SecretKeySpec secretKeySpec = new SecretKeySpec(MessageDigest.getInstance("MD5").digest(IIlIIlIIlllllll.getBytes(StandardCharsets.UTF_8)), "Blowfish");
-            Cipher lllIIlIIlllllll = Cipher.getInstance("Blowfish");
-            lllIIlIIlllllll.init(lIllIl[3], secretKeySpec);
-            return new String(lllIIlIIlllllll.doFinal(Base64.getDecoder().decode(lIlIIlIIlllllll.getBytes(StandardCharsets.UTF_8))), StandardCharsets.UTF_8);
-        } catch (Exception IllIIlIIlllllll) {
-            IllIIlIIlllllll.printStackTrace();
-            return null;
-        }
     }
 }

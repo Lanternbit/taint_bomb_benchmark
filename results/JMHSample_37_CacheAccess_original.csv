@@ -1,0 +1,3 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
+"org.sample.JMHSample_37_CacheAccess.colFirst","avgt",1,5,7.850139,0.627175,"ns/op"
+"org.sample.JMHSample_37_CacheAccess.rowFirst","avgt",1,5,0.326049,0.064454,"ns/op"

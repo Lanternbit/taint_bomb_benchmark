@@ -1,4 +1,4 @@
-@echo on
+@echo off
 setlocal enabledelayedexpansion
 
 set CLASSES=JMHSample_11_Loops JMHSample_18_Control JMHSample_21_ConsumeCPU JMHSample_37_CacheAccess JMHSample_39_MemoryAccess
@@ -19,12 +19,10 @@ for %%C in (%CLASSES%) do (
             set "CLASSPATH=target\classes;obfuscated\%%T"
         )
         
-        echo Java command: java -cp "!CLASSPATH!" org.sample.MyBenchmark !TEST_CLASS! test1
-        java -cp "!CLASSPATH!" org.sample.MyBenchmark !TEST_CLASS! test1 > "%RESULTS_DIR%\%%C_%%T.txt" 2>&1
+        java -cp "!CLASSPATH!" org.sample.MyBenchmark !TEST_CLASS! test1 > "%RESULTS_DIR%\%%C_%%T.txt"
         
         echo Benchmark for %%C (%%T) completed
     )
 )
 
 echo All benchmarks completed. Results are saved in %RESULTS_DIR%
-pause

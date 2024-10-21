@@ -1,0 +1,111 @@
+STDOUT:
+# JMH version: 1.35
+# VM version: JDK 22.0.1, OpenJDK 64-Bit Server VM, 22.0.1+8-16
+# VM invoker: C:\Users\kisia\Desktop\record\openjdk-22.0.1_windows-x64_bin\jdk-22.0.1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.JMHSample_37_CacheAccess.colFirst
+
+# Run progress: 0.00% complete, ETA 00:00:20
+# Fork: 1 of 5
+# Warmup Iteration   1: 7.280 ns/op
+Iteration   1: 7.016 ns/op
+
+# Run progress: 10.00% complete, ETA 00:00:25
+# Fork: 2 of 5
+# Warmup Iteration   1: 6.524 ns/op
+Iteration   1: 7.051 ns/op
+
+# Run progress: 20.00% complete, ETA 00:00:22
+# Fork: 3 of 5
+# Warmup Iteration   1: 5.732 ns/op
+Iteration   1: 5.613 ns/op
+
+# Run progress: 30.00% complete, ETA 00:00:19
+# Fork: 4 of 5
+# Warmup Iteration   1: 5.489 ns/op
+Iteration   1: 5.466 ns/op
+
+# Run progress: 40.00% complete, ETA 00:00:16
+# Fork: 5 of 5
+# Warmup Iteration   1: 5.367 ns/op
+Iteration   1: 5.738 ns/op
+
+
+Result "org.sample.JMHSample_37_CacheAccess.colFirst":
+  6.177 ��(99.9%) 3.034 ns/op [Average]
+  (min, avg, max) = (5.466, 6.177, 7.051), stdev = 0.788
+  CI (99.9%): [3.143, 9.211] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 22.0.1, OpenJDK 64-Bit Server VM, 22.0.1+8-16
+# VM invoker: C:\Users\kisia\Desktop\record\openjdk-22.0.1_windows-x64_bin\jdk-22.0.1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.JMHSample_37_CacheAccess.rowFirst
+
+# Run progress: 50.00% complete, ETA 00:00:13
+# Fork: 1 of 5
+# Warmup Iteration   1: 0.270 ns/op
+Iteration   1: 0.276 ns/op
+
+# Run progress: 60.00% complete, ETA 00:00:11
+# Fork: 2 of 5
+# Warmup Iteration   1: 0.277 ns/op
+Iteration   1: 0.264 ns/op
+
+# Run progress: 70.00% complete, ETA 00:00:08
+# Fork: 3 of 5
+# Warmup Iteration   1: 0.275 ns/op
+Iteration   1: 0.275 ns/op
+
+# Run progress: 80.00% complete, ETA 00:00:05
+# Fork: 4 of 5
+# Warmup Iteration   1: 0.277 ns/op
+Iteration   1: 0.277 ns/op
+
+# Run progress: 90.00% complete, ETA 00:00:02
+# Fork: 5 of 5
+# Warmup Iteration   1: 0.277 ns/op
+Iteration   1: 0.272 ns/op
+
+
+Result "org.sample.JMHSample_37_CacheAccess.rowFirst":
+  0.273 ��(99.9%) 0.020 ns/op [Average]
+  (min, avg, max) = (0.264, 0.273, 0.277), stdev = 0.005
+  CI (99.9%): [0.253, 0.293] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:27
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                          Mode  Cnt  Score   Error  Units
+JMHSample_37_CacheAccess.colFirst  avgt    5  6.177 �� 3.034  ns/op
+JMHSample_37_CacheAccess.rowFirst  avgt    5  0.273 �� 0.020  ns/op
+
+Benchmark result is saved to results\JMHSample_37_CacheAccess_jobf.csv
+
+
+STDERR:

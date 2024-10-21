@@ -1,0 +1,8 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
+"org.sample.JMHSample_11_Loops.measureRight","avgt",1,5,0.551197,0.051565,"ns/op"
+"org.sample.JMHSample_11_Loops.measureWrong_1","avgt",1,5,0.549852,0.057945,"ns/op"
+"org.sample.JMHSample_11_Loops.measureWrong_10","avgt",1,5,0.063649,0.009267,"ns/op"
+"org.sample.JMHSample_11_Loops.measureWrong_100","avgt",1,5,0.019569,0.002017,"ns/op"
+"org.sample.JMHSample_11_Loops.measureWrong_1000","avgt",1,5,0.014052,0.004504,"ns/op"
+"org.sample.JMHSample_11_Loops.measureWrong_10000","avgt",1,5,0.013676,0.001414,"ns/op"
+"org.sample.JMHSample_11_Loops.measureWrong_100000","avgt",1,5,0.013193,0.000552,"ns/op"

@@ -1,0 +1,156 @@
+STDOUT:
+# JMH version: 1.35
+# VM version: JDK 22.0.1, OpenJDK 64-Bit Server VM, 22.0.1+8-16
+# VM invoker: C:\Users\kisia\Desktop\record\openjdk-22.0.1_windows-x64_bin\jdk-22.0.1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.JMHSample_39_MemoryAccess.sumArray
+
+# Run progress: 0.00% complete, ETA 00:00:30
+# Fork: 1 of 5
+# Warmup Iteration   1: 6.090 ms/op
+Iteration   1: 4.102 ms/op
+
+# Run progress: 6.67% complete, ETA 00:01:09
+# Fork: 2 of 5
+# Warmup Iteration   1: 4.236 ms/op
+Iteration   1: 3.991 ms/op
+
+# Run progress: 13.33% complete, ETA 00:01:02
+# Fork: 3 of 5
+# Warmup Iteration   1: 4.046 ms/op
+Iteration   1: 4.166 ms/op
+
+# Run progress: 20.00% complete, ETA 00:00:57
+# Fork: 4 of 5
+# Warmup Iteration   1: 4.202 ms/op
+Iteration   1: 4.257 ms/op
+
+# Run progress: 26.67% complete, ETA 00:00:52
+# Fork: 5 of 5
+# Warmup Iteration   1: 4.440 ms/op
+Iteration   1: 4.393 ms/op
+
+
+Result "org.sample.JMHSample_39_MemoryAccess.sumArray":
+  4.182 ��(99.9%) 0.587 ms/op [Average]
+  (min, avg, max) = (3.991, 4.182, 4.393), stdev = 0.153
+  CI (99.9%): [3.595, 4.770] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 22.0.1, OpenJDK 64-Bit Server VM, 22.0.1+8-16
+# VM invoker: C:\Users\kisia\Desktop\record\openjdk-22.0.1_windows-x64_bin\jdk-22.0.1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.JMHSample_39_MemoryAccess.sumArrayList
+
+# Run progress: 33.33% complete, ETA 00:00:48
+# Fork: 1 of 5
+# Warmup Iteration   1: 24.772 ms/op
+Iteration   1: 25.775 ms/op
+
+# Run progress: 40.00% complete, ETA 00:00:45
+# Fork: 2 of 5
+# Warmup Iteration   1: 22.690 ms/op
+Iteration   1: 24.148 ms/op
+
+# Run progress: 46.67% complete, ETA 00:00:40
+# Fork: 3 of 5
+# Warmup Iteration   1: 23.723 ms/op
+Iteration   1: 22.621 ms/op
+
+# Run progress: 53.33% complete, ETA 00:00:35
+# Fork: 4 of 5
+# Warmup Iteration   1: 22.796 ms/op
+Iteration   1: 24.067 ms/op
+
+# Run progress: 60.00% complete, ETA 00:00:30
+# Fork: 5 of 5
+# Warmup Iteration   1: 22.681 ms/op
+Iteration   1: 23.841 ms/op
+
+
+Result "org.sample.JMHSample_39_MemoryAccess.sumArrayList":
+  24.090 ��(99.9%) 4.333 ms/op [Average]
+  (min, avg, max) = (22.621, 24.090, 25.775), stdev = 1.125
+  CI (99.9%): [19.757, 28.423] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 22.0.1, OpenJDK 64-Bit Server VM, 22.0.1+8-16
+# VM invoker: C:\Users\kisia\Desktop\record\openjdk-22.0.1_windows-x64_bin\jdk-22.0.1\bin\java.exe
+# VM options: <none>
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.JMHSample_39_MemoryAccess.sumArrayListShuffled
+
+# Run progress: 66.67% complete, ETA 00:00:25
+# Fork: 1 of 5
+# Warmup Iteration   1: 157.880 ms/op
+Iteration   1: 157.955 ms/op
+
+# Run progress: 73.33% complete, ETA 00:00:20
+# Fork: 2 of 5
+# Warmup Iteration   1: 173.454 ms/op
+Iteration   1: 175.903 ms/op
+
+# Run progress: 80.00% complete, ETA 00:00:15
+# Fork: 3 of 5
+# Warmup Iteration   1: 173.285 ms/op
+Iteration   1: 174.700 ms/op
+
+# Run progress: 86.67% complete, ETA 00:00:10
+# Fork: 4 of 5
+# Warmup Iteration   1: 171.143 ms/op
+Iteration   1: 173.402 ms/op
+
+# Run progress: 93.33% complete, ETA 00:00:04
+# Fork: 5 of 5
+# Warmup Iteration   1: 169.347 ms/op
+Iteration   1: 171.115 ms/op
+
+
+Result "org.sample.JMHSample_39_MemoryAccess.sumArrayListShuffled":
+  170.615 ��(99.9%) 28.096 ms/op [Average]
+  (min, avg, max) = (157.955, 170.615, 175.903), stdev = 7.296
+  CI (99.9%): [142.519, 198.711] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:15
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                       Mode  Cnt    Score    Error  Units
+JMHSample_39_MemoryAccess.sumArray              avgt    5    4.182 ��  0.587  ms/op
+JMHSample_39_MemoryAccess.sumArrayList          avgt    5   24.090 ��  4.333  ms/op
+JMHSample_39_MemoryAccess.sumArrayListShuffled  avgt    5  170.615 �� 28.096  ms/op
+
+Benchmark result is saved to results\JMHSample_39_MemoryAccess_jobf.csv
+
+
+STDERR:

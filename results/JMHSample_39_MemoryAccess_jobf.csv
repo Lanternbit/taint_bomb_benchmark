@@ -1,0 +1,4 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
+"org.sample.JMHSample_39_MemoryAccess.sumArray","avgt",1,5,4.182147,0.587363,"ms/op"
+"org.sample.JMHSample_39_MemoryAccess.sumArrayList","avgt",1,5,24.090357,4.333101,"ms/op"
+"org.sample.JMHSample_39_MemoryAccess.sumArrayListShuffled","avgt",1,5,170.614980,28.095895,"ms/op"

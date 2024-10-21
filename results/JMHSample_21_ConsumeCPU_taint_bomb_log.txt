@@ -1,0 +1,6 @@
+STDOUT:
+
+
+STDERR:
+No matching benchmarks. Miss-spelled regexp?
+Use EXTRA verbose mode to debug the pattern matching.

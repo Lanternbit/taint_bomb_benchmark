@@ -1,0 +1,4 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit"
+"org.sample.JMHSample_18_Control.pingpong","thrpt",2,5,35584295.566438,19008240.653259,"ops/s"
+"org.sample.JMHSample_18_Control.pingpong:ping","thrpt",2,5,17792149.323277,9504109.007083,"ops/s"
+"org.sample.JMHSample_18_Control.pingpong:pong","thrpt",2,5,17792146.243161,9504131.646199,"ops/s"
